@@ -1,0 +1,348 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+
+</head>
+  <style>
+.banner-navbar, .banner-site {
+    margin-bottom: 15px;
+    background: 0 0;
+}
+.banner {
+    clear: both;
+    max-height: 313px;
+    overflow: hidden;
+    background-color: #fff;
+}
+div {
+    display: block;
+}
+.container:after, .container:before, .footer:after, .footer:before, .header:after, .header:before {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.navbar {
+    margin: 0 auto;
+    width: 1200px;
+    height: 52px;
+}
+.navbar:after, .navbar:before {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: left;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background: #f1f1f1;
+    color: #555;
+    font-size: 12px;
+    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 20px;
+}
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #222;
+    opacity: .95;
+    filter: alpha(Opacity=90);
+    -moz-opacity: .9;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+.container:after, .container:before, .footer:after, .footer:before, .header:after, .header:before {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+html {
+    color: -internal-root-color;
+}
+::selection {
+    background: #81c53f;
+    color: #fff;
+    text-shadow: none;
+}
+.navbar .logo {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    width: 200px;
+    height: 52px;
+    background: url(../images/logo.png) no-repeat 0 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 208px;
+}
+a {
+    color: #555;
+    text-decoration: none;
+}
+.navbar .nav {
+    position: relative;
+    left: 0;
+    float: left;
+    display: block;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+}
+.nav {
+    list-style: none;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar .nav>li {
+    position: relative;
+    float: left;
+    margin-right: 1px;
+    width: 110px;
+    text-align: center;
+}
+li {
+    line-height: 20px;
+}
+.nav>li>a {
+    display: block;
+}
+.navbar .nav li.current-menu-item a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+.navbar .nav li.current-menu-item a:hover{background-color: #404040;}
+.navbar .logo a {
+    display: block;
+    overflow: hidden;
+    height: 52px;
+    color: #fff;
+}
+.pull-right {
+    float: right;
+}
+.navbar .menu {
+    margin-top: 10px;
+    width: 240px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+input.search-input {
+    float: left;
+    margin-right: -35px;
+    padding-right: 35px;
+    width: 195px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    color: #bbb;
+    line-height: 14px;}
+    .searchbtn {
+    width: 16px;
+    outline: 0;
+    border: none;
+    background: url(../images/searchbtn.png) no-repeat 0 6px;
+}
+button, input, select, textarea {
+    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+button, input, label, select, textarea {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+button, input[type=button], input[type=reset], input[type=submit], input[type=radio], input[type=checkbox], label, select {
+    cursor: pointer;
+}
+#mobile_nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+}
+#mobile_nav div {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    text-align: right;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 5px;
+}
+.navicon:after, .navicon:before {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #eee;
+    content: '';
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: margin,-webkit-transform;
+    transition-property: margin,-webkit-transform;
+    transition-property: margin,transform;
+    transition-property: margin,transform,-webkit-transform;
+}
+.navicon:after {
+    margin-top: 10px;
+}
+#mobile_nav ul {
+    display: none;
+    padding-bottom: 40px;
+    width: 100%;
+    background: rgba(1,1,1,.8);
+}
+#mobile_nav li {
+    display: block;
+    overflow: hidden;
+    height: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+}
+#mobile_nav a, #mobile_nav a:hover {
+    color: #fff;
+}
+   </style>
+  <body>
+
+
+    <header class="header" style="height: 52px;position: fixed;top: 0px;left: 0px;z-index: 999;">
+        <div class="navbar">
+          <h1 class="logo">
+            <a href="https://blog.yzmcms.com/" title="袁志蒙个人博客 - YzmCMS博客" alt="袁志蒙个人博客 - YzmCMS博客">袁志蒙个人博客 - YzmCMS博客</a></h1>
+          <ul class="nav">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home"><a href="https://blog.yzmcms.com/">首页</a></li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-has-children">
+              <a href="https://blog.yzmcms.com/qianduan/">前端</a><ul class="sub-menu">
+                  <!-- 这里是二级栏目的循环，不需要的可以删除，代码开始 -->
+                   
+                                                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://blog.yzmcms.com/htm/">html</a></li>
+                                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://blog.yzmcms.com/css/">css</a></li>
+                                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://blog.yzmcms.com/js/">js</a></li>
+                          
+                              <!-- 这里是二级栏目的循环，不需要的可以删除，代码结束 -->
+              </ul></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-has-children">
+              <a href="https://blog.yzmcms.com/chengxu/">程序</a><ul class="sub-menu">
+                  <!-- 这里是二级栏目的循环，不需要的可以删除，代码开始 -->
+                   
+                                                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://blog.yzmcms.com/php/">php</a></li>
+                                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://blog.yzmcms.com/mysql/">mysql</a></li>
+                                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://blog.yzmcms.com/server/">server</a></li>
+                          
+                              <!-- 这里是二级栏目的循环，不需要的可以删除，代码结束 -->
+              </ul></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-has-children">
+              <a href="https://blog.yzmcms.com/shenghuo/">生活</a><ul class="sub-menu">
+                  <!-- 这里是二级栏目的循环，不需要的可以删除，代码开始 -->
+                              <!-- 这里是二级栏目的循环，不需要的可以删除，代码结束 -->
+              </ul></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-has-children">
+              <a href="https://blog.yzmcms.com/yule/">娱乐</a><ul class="sub-menu">
+                  <!-- 这里是二级栏目的循环，不需要的可以删除，代码开始 -->
+                              <!-- 这里是二级栏目的循环，不需要的可以删除，代码结束 -->
+              </ul></li>
+                          <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-has-children">
+              <a href="https://blog.yzmcms.com/guanyu/">关于</a><ul class="sub-menu">
+                  <!-- 这里是二级栏目的循环，不需要的可以删除，代码开始 -->
+                   
+                                                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="/guestbook/index/init.html">留言联系</a></li>
+                                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://blog.yzmcms.com/guanyuzuozhe/">关于作者</a></li>
+                                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://bbs.yzmcms.com">官方论坛</a></li>
+                          
+                              <!-- 这里是二级栏目的循环，不需要的可以删除，代码结束 -->
+              </ul></li>
+              
+          </ul>
+          <div class="menu pull-right">
+            <form name="formsearch" action="https://blog.yzmcms.com/search/index/init.html" method="get">
+              <input class="search-input" name="q" id="search-keyword" type="text" required="required" placeholder=" 输入你要找的内容" />
+              <button type="submit" class="searchbtn" title="搜一下！">
+                  <!-- <input type="hidden" name="modelid" value="1" id="modelid" /> -->
+                    <i class="fa"></i>
+              </button>
+            </form>
+          </div>
+          
+          <div id="mobile_nav">
+              <div class="nav_box"><span class="navicon"></span></div>
+              <ul class="nav_ul">
+                  <li><a href="https://blog.yzmcms.com/">首页</a></li>
+                                      <li><a href="https://blog.yzmcms.com/qianduan/">前端</a></li>
+                                      <li><a href="https://blog.yzmcms.com/chengxu/">程序</a></li>
+                                      <li><a href="https://blog.yzmcms.com/shenghuo/">生活</a></li>
+                                      <li><a href="https://blog.yzmcms.com/yule/">娱乐</a></li>
+                                      <li><a href="https://blog.yzmcms.com/guanyu/">关于</a></li>
+                      
+              </ul>
+          </div>	
+      </header>    <script type="text/javascript" src="https://blog.yzmcms.com/common/static/js/swiper.min.js"></script>	
+          <section class="container">
+            <div class="banner banner-navbar">
+                  <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                                                  
+                          <div class="swiper-slide"><a href="https://www.yzmcms.com" target="_blank"><img src="/uploads/202001/11/200111075456968.jpg" alt="YzmCMS轻松建站，更自由"></a></div>
+                              
+                          <div class="swiper-slide"><a href="https://blog.yzmcms.com/shenghuo/86.html" target="_blank"><img src="/uploads/202001/11/200111075535707.jpg" alt="为什么要开发自己的CMS?"></a></div>
+                              
+                          <div class="swiper-slide"><a href="https://www.yzmcms.com" target="_blank"><img src="/uploads/202001/11/200111075614137.jpg" alt="YzmCMS开源CMS"></a></div>
+                                          </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+          <script>
+              var swiper = new Swiper('.swiper-container', {
+                  pagination: '.swiper-pagination',
+                  nextButton: '.swiper-button-next',
+                  prevButton: '.swiper-button-prev',
+                  paginationClickable: true,
+                  spaceBetween: 30,
+                  centeredSlides: true,
+                  autoplay: 5000,
+                  autoplayDisableOnInteraction: false,
+                  loop: true
+              });
+          </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
