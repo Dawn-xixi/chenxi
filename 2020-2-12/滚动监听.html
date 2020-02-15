@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>滚动监听</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+</head>
+
+<body style="background-color: rgb(217, 255, 4)">
+    <div style="width: 1200px;height: 800px;margin: auto;">
+        <div class="row mt-5">
+            <div class="col-3">
+                <nav id="nav1">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a href="#item1" class="nav-link">item1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#item2" class="nav-link">item2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#item3" class="nav-link">item3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#item4" class="nav-link">item4</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-8">
+                <div style="height: 300px;width: 100;overflow-y: auto;position: relative;" data-target="#nav1"
+                    data-spy="scroll" data-offset="0">
+                    <h1 id="item1">item1</h1>
+                    <p style="height: 200px;">哈哈哈哈</p>
+                    <h1 id="item2">item2</h1>
+                    <p style="height: 200px;">哈哈哈哈</p>
+                    <h1 id="item3">item3</h1>
+                    <p style="height: 200px;">嗯哼</p>
+                    <h1 id="item4">item4</h1>
+                    <p style="height: 100px;">啵啵啵</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>圆形进度条</title>
+    <!-- Required meta tags 引入-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap css 引入-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+    .sxs1{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            transform: rotate(0deg);
+            clip: rect(0px,250px,500px,0px); 
+            border-radius: 250px;
+            background-color: rgb(245, 92, 92);
+            
+        }
+        .sxs2{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            transform: rotate(0deg);
+            clip: rect(0px,250px,500px,0px);
+            border-radius: 250px;
+            background-color: rgb(248, 103, 103);
+            z-index: 99;
+        }
+      p{margin: 0;margin-top: 150px;font-size: 100px;font-weight: 500;}
+      .wai{width: 500px;height: 500px;background-color: rgb(124, 124, 235);border-radius: 250px;margin: 0 auto;margin-top: 30px;position: relative;}
+      .zhong{width: 500px;height: 500px;;border-radius: 250px;}
+      .nei{width: 450px;height: 450px;background-color: white;border-radius: 225px;position: absolute;top: 25px;right: 25px;text-align: center;z-index: 100;}
+      .sxs2{transform: rotate(-180deg);}
+      .sxs1{transform: rotate(0deg);}
+      body{width: 1200px;margin: 0 auto;height: 800px;}
+      .btn{padding: 0;padding-left: 548.805px;margin-top: 20px;}
+  </style>
+  <body>
+    <div class="btn">
+      <button class="bbttnn" onclick="ans()">增加</button>
+      <button class="bbttnn" onclick="ans1()">还原</button>
+    </div>
+    <div class="wai">
+      <div class="zhong">
+        <div class="sxs1"></div>
+        <div class="sxs2"></div>
+        <div class="nei">
+          <p class="pps">0%</p>
+        </div>
+      </div>
+    </div>
+    <script>
+        let q1 = -180
+        let num = 0
+        let zi = document.getElementsByClassName('pps')[0]
+        let bys1 = document.getElementsByClassName('sxs1')[0]
+        let bys2 = document.getElementsByClassName('sxs2')[0]
+
+      function ans(){
+        if(num!=100){
+          q1 += 18
+          num+=5
+        }
+        if(num==50){
+          q1 =-180
+          bys2.style.background="blue"
+        }
+        zi.innerHTML=num+"%"
+        bys2.style.transform="rotate("+q1+"deg)"
+        }
+        function ans1(){
+          num = 0
+          q1 = -180
+          zi.innerHTML=num+"%"
+          bys2.style.transform="rotate("+q1+"deg)"
+          bys2.style.background="red"
+        }
+      
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
