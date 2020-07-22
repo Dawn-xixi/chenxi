@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "SourceHanSansCNLight";
+  src: url("SourceHanSansCNLight.ttf") format("truetype"),
+       url("SourceHanSansCNLight.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}

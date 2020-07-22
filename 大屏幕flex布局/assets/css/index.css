@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+/*
+* 公共布局
+*/
+html,
+body {
+  height: 100%;
+  background: #0c2742;
+}
+
+i,
+cite {
+  font-style: normal;
+}
+
+.loading-success {
+  display: block !important;
+}
+
+.header {
+  position: relative;
+  color: #fff;
+  font-size: 0.64rem;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  height: 2.1rem;
+}
+
+.header img {
+  margin-right: .27rem;
+  width: 1.69rem;
+  height: 1.06rem;
+}
+
+.time {
+  font-weight: normal;
+  text-align: center;
+  position: absolute;
+  right: 2.24rem;
+  top: 1.5rem;
+  font-size: .36rem;
+  line-height: 1.2;
+}
+
+.time1 {
+  font-size: .48rem;
+  letter-spacing: .16rem;
+}
+
+.layout-container {
+  display: none;
+  position: relative;
+  height: 19rem;
+  /* height: 100%; */
+  /* min-height: 21.6rem; */
+  background: url("../img/layout-bg.png") no-repeat top;
+  background-size: 100% 100%;
+}
+
+.layout-body {
+  color: #fff;
+  padding: 0 0.2rem 0 0.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.5rem;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.layout-body .btn-home {
+  position: absolute;
+  right: 0.49rem;
+  top: 0.06rem;
+  width: 0.92rem;
+  height: 0.92rem;
+  background: url(../img/btn-home.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.layout-body .flex-left {
+  -ms-flex-preferred-size: 10.05rem;
+  flex-basis: 10.05rem;
+  overflow: hidden;
+}
+
+.layout-body .flex-mid {
+  margin-left: .11rem;
+  margin-right: .11rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+.layout-body .flex-right {
+  -ms-flex-preferred-size: 10.05rem;
+  flex-basis: 10.05rem;
+  overflow: hidden;
+}
+
+/*
+* 首页
+*/
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-column {
+  flex-direction: column
+}
+
+/* 水平居中 */
+.justify-center {
+  justify-content: center;
+}
+
+/* 垂直居中 */
+.align-center {
+  align-items: center;
+}
+
+.just-between {
+  justify-content: space-between;
+}
+
+.just-around {
+  justify-content: space-around;
+}
+
+.col-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.col-row .col-md3 {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+}
+
+.col-row .col-md4 {
+  -ms-flex-preferred-size: 33.33%;
+  flex-basis: 33.33%;
+}
+
+.col-row .col-md6 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.col-row .col-md12 {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.common-panel {
+  overflow: hidden;
+}
+
+.common-panel .panel-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 0.7rem;
+  font-size: 0.48rem;
+  color: #ffffff;
+}
+
+/* 主要模块高度设置 */
+.common-panel-l1 {
+  height: 8.88rem;
+  margin-bottom: .41rem;
+}
+
+.common-panel-l1 .panel-header {}
+
+.common-panel-l1 .panel-body {
+  padding: 0.2rem 0.4rem 0;
+}
+
+.common-panel-l2 {
+  height: 8.9rem;
+}
+
+.common-panel-l2 .panel-header {}
+
+.common-panel-l2 .panel-body {
+  padding: 0.2rem 0.4rem 0;
+}
+
+.common-panel-r1 {
+  height: 8.88rem;
+  margin-bottom: .41rem;
+}
+
+.common-panel-r1 .panel-header {}
+
+.common-panel-r1 .panel-body {
+  padding: 0.2rem 0.4rem 0;
+}
+
+.common-panel-r2 {
+  height: 8.9rem;
+  /* margin-bottom: .3rem; */
+}
+
+.common-panel-r2 .panel-header {}
+
+.common-panel-r2 .panel-body {
+  padding: 0.2rem 0.4rem 0;
+}
+
+.common-panel-m1 {
+  /* height: 6.1rem; */
+  /* margin-bottom: 0.8rem; */
+}
+
+.common-panel-m1 .panel-header {}
+
+.common-panel-m1 .panel-body {
+  padding: 0.2rem 0.4rem 0;
+}
+
+.common-panel-m2 {
+  height: 7.1rem;
+}
+
+.common-panel-m2 .panel-header {}
+
+.common-panel-m2 .panel-body {
+  padding: 0.2rem 0.4rem 0;
+}
+
+/* 主要模块高度设置 结束*/
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+.panel-body .item+.item {
+  margin-top: 0.12rem;
+}
+
+
+/* table表格 */
+.common-scroll-table {
+  font-size: 0.32rem;
+  text-align: center;
+}
+
+.table-index {
+  text-align: center;
+  flex-basis: 1.3rem;
+}
+
+.table-th {
+  background: #092757;
+  border-radius: 0.1rem;
+  padding: 0.18rem 0;
+}
+
+.index-bg {
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.3rem;
+  display: inline-block;
+  /* background: url("../img/circle-order.png") no-repeat top;
+  background-size: 100% 100%; */
+}
+
+.common-scroll-table ul>li {
+  padding: 0.18rem 0;
+}
+
+.common-scroll-table ul>li:nth-of-type(even) {
+  background: #092757;
+  border-radius: 0.1rem;
+}
+
+.table-blue {
+  color: #00CCFF;
+}
+
+.table-green {
+  color: #00FFA2;
+}
+
+.table-orange {
+  color: #FFA800;
+}
+
+/* table表格 结束*/
+.zb-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zb-line .zb-title {
+  font-size: 0.3rem;
+}
+
+.zb-line .zb-data {
+  color: #FACC14;
+}
+
+.zb-line .zb-data span {
+  font-size: 0.44rem;
+}
+
+.zb-line .zb-data i {
+  font-size: 0.28rem;
+}
+
+.zb-block .zb-title {
+  font-size: 0.3rem;
+}
+
+.zb-block .zb-data {
+  color: #FACC14;
+}
+
+.zb-block .zb-data span {
+  font-size: 0.44rem;
+}
+
+.zb-block .zb-data i {
+  font-size: 0.28rem;
+}
+
+.f3 {
+  font-size: 0.3rem;
+}
+
+.f32 {
+  font-size: 0.32rem;
+}
+
+.f36 {
+  font-size: 0.36rem;
+}
+
+.f4 {
+  font-size: 0.4rem;
+}
+
+.f44 {
+  font-size: 0.44rem;
+}
+/* 4k分辨率 */
+@media screen and (min-width: 2540px) {}
+
+/* 1920分辨率 */
+@media screen and (min-width: 1919px) and (max-width: 1920px) {}
+
+/* 1600分辨率 */
+@media screen and (min-width: 1590px) and (max-width: 1601px) {}
